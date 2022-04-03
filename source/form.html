@@ -31,15 +31,15 @@
           </div>
         </nav>
       </div>
-      <h1 class="page-header__title page-header__title--form">Подбор программы</h1>
     </header>
 
     <main class="page-main">
+      <h1 class="page-main__title page-main__title--form">Подбор программы</h1>
       <section class="program-form">
         <h2 class="visually-hidden">Форма выбора программы питания для кота</h2>
         <p class ="program-form__heading">Заполните анкету, и мы подберем <br> программу питания для вашего кота</p>
           <form class="choose-form" action="https://echo.htmlacademy.ru" method="post">
-            <div class="page-main__wrapper">
+            <div class="choose-form__wrapper">
               <div class="cat-info">
                 <h3 class="visually-hidden">Информация о коте</h3>
                 <div class="cat-info__wrapper">
@@ -58,18 +58,18 @@
 
               <fieldset class="program-target">
                 <legend class="visually-hidden">Цель программы:</legend>
-                <ul class="program-target__list target-list">
-                  <li class="target-list__item">
+                <ul class="program-target__list">
+                  <li class="target-list">
                     <input class="visually-hidden program-target__input target-list__input-radio" type="radio" name="target-group" value="slim" id="target-slim" checked>
-                    <label class="program-target__label" for="target-slim">Похудение</label>
+                    <label class="program-target__label target-list__label" for="target-slim">Похудение</label>
                   </li>
-                  <li class="target-list__item">
+                  <li class="target-list">
                     <input class="visually-hidden program-target__input target-list__input-radio" type="radio" name="target-group" value="weight" id="target-weight">
-                    <label class="program-target__label" for="target-weight">Набор массы</label>
+                    <label class="program-target__label target-list__label" for="target-weight">Набор массы</label>
                   </li>
-                  <li class="target-list__item">
+                  <li class="target-list">
                     <input class="visually-hidden program-target__input target-list__input-radio" type="radio" name="target-group" value="unknown" id="target-unknown">
-                    <label class="program-target__label" for="target-unknown">Не знаю (нужен ваш совет)</label>
+                    <label class="program-target__label target-list__label" for="target-unknown">Не знаю (нужен ваш совет)</label>
                   </li>
                 </ul>
               </fieldset>
@@ -99,29 +99,29 @@
 
             <div class="additionally">
               <div class="additionally__title subtitle">Дополнительно:</div>
-              <ul class="additionally__list additionally-list">
-                <li class="additionally-list__item">
+              <ul class="additionally__list">
+                <li class="additionally-list">
                   <input class="visually-hidden additionally__input additionally-list__input-checkbox" type="checkbox" name="sweetener" id="add-sweetener" checked>
-                  <label class="additionally-list__label" for="add-sweetener">Сахарозаменитель</label>
+                  <label class="additionally__label additionally-list__label" for="add-sweetener">Сахарозаменитель</label>
                 </li>
-                <li class="additionally-list__item">
+                <li class="additionally-list">
                   <input class="visually-hidden additionally__input additionally-list__input-checkbox" type="checkbox" name="drink-water" id="add-drink-water">
-                  <label class="additionally-list__label" for="add-drink-water">Питьевая вода</label>
+                  <label class="additionally__label additionally-list__label" for="add-drink-water">Питьевая вода</label>
                 </li>
-                <li class="additionally-list__item">
+                <li class="additionally-list">
                   <input class="visually-hidden additionally__input additionally-list__input-checkbox" type="checkbox" name="milk" id="add-milk">
-                  <label class="additionally-list__label" for="add-milk">Молоко</label>
+                  <label class="additionally__label additionally-list__label" for="add-milk">Молоко</label>
                 </li>
-                <li class="additionally-list__item">
+                <li class="additionally-list">
                   <input class="visually-hidden additionally__input additionally-list__input-checkbox" type="checkbox" name="vitamins" id="add-vitamins">
-                  <label class="additionally-list__label" for="add-vitamins">Витамины</label>
+                  <label class="additionally__label additionally-list__label" for="add-vitamins">Витамины</label>
                 </li>
               </ul>
             </div>
 
-            <div class="program-form__submit">
-              <button class="program-form__button" type="submit">Отправить заявку</button>
-              <small>* — Обязательные поля</small>
+            <div class="choose-form__submit">
+              <button class="button choose-form__button" type="submit">Отправить заявку</button>
+              <p>* — Обязательные поля</p>
             </div>
           </form>
       </section>
