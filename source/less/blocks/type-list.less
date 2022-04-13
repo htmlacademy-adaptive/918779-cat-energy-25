@@ -1,0 +1,109 @@
+.type-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex-wrap: wrap;
+}
+
+.type-list__item {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 30px 20px 23px 20px;
+  margin-bottom: 20px;
+  background-color: @grey;
+}
+
+.type-list__item a:hover {
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+.type-list__item a:active,
+.type-list__item a:focus {
+  opacity: 0.3;
+  cursor: pointer;
+}
+
+.type-list__title {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 24px;
+  line-height: 37px;
+  font-weight: 400;
+  color: @black;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  position: relative;
+}
+
+.type-list__item--slim .type-list__title {
+  padding-left: 15px;
+}
+
+.type-list__item--pro .type-list__title {
+  padding-left: 39px;
+  margin-top: -1px;
+}
+
+.type-list__item--slim .type-list__title::after {
+  content: "";
+  width: 50px;
+  height: 53px;
+  position: absolute;
+  background: url("../../img/cat_back01.svg");
+  background-repeat: no-repeat;
+  right: auto;
+  left: 2px;
+  top: -9px;
+}
+
+.type-list__item--pro .type-list__title::after {
+  content: "";
+  width: 67px;
+  height: 50px;
+  position: absolute;
+  background: url("../../img/cat_back02.svg");
+  background-repeat: no-repeat;
+  right: auto;
+  left: -7px;
+  top: -7px;
+}
+
+.type-list__item p {
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: @dark-grey;
+  margin-top: 29px;
+  padding-bottom: 22px;
+  margin-bottom: 19px;
+  box-sizing: border-box;
+  border-bottom: 1px solid @direction-grey;
+}
+
+.type-list__item a {
+  display: flex;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: @black;
+  background-color: transparent;
+  justify-content: left;
+  position: relative;
+}
+
+.type-list__item a::after {
+  content: "";
+  width: 24px;
+  height: 12px;
+  position: absolute;
+  background: url("../../img/icon_arrow.svg");
+  background-repeat: no-repeat;
+  right: auto;
+  left: 99px;
+  top: 2px;
+}

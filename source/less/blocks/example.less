@@ -1,0 +1,154 @@
+.example {
+  background: @light-grey;
+  padding: 0 20px;
+  margin-top: 39px;
+  padding-bottom: 33px;
+}
+
+.example__title {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: 400;
+  color: @black;
+  margin: 0 auto;
+  display: inline-block;
+  margin-top: 28px;
+}
+
+.example__text {
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: @dark-grey;
+  margin-top: 33px;
+  margin-bottom: 24px;
+}
+
+.example__table {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+}
+
+.example__column {
+  width: calc(50% - 16px);
+}
+
+.example__column dt {
+  position: relative;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: @black;
+  text-align: center;
+  border-radius: 3px;
+  border: 1px solid @example-grey;
+  padding-top: 14px;
+  padding-bottom: 17px;
+}
+
+.example__column dd {
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: 400;
+  color: @dark-grey;
+  text-align: center;
+  margin: 0 20px;
+  padding: 0 15px;
+  background: @light-grey;
+  transform: translateY(-9px);
+}
+
+.example__result {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  color: @black;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+  margin-top: 8px;
+}
+
+.example__controls {
+  display: flex;
+  justify-content: center;
+  margin-top: 33px;
+  padding-left: 5px;
+  position: relative;
+}
+
+.example__scale {
+  margin-top: 2px;
+}
+
+.example__toggle {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.example__toggle--before {
+  padding-right: 18px;
+}
+
+.example__toggle--after {
+  padding-left: 18px;
+}
+
+.example__range {
+  display: flex;
+  flex-direction: column;
+  margin-top: 35px;
+}
+
+.example__controls input[type="range"] {
+  box-sizing: border-box;
+  overflow: hidden;
+  border-radius: 7px;
+  border: 1px solid @example-grey;
+  width: 84px;
+  appearance: none;
+  background: @white;
+}
+
+.example__controls input[type="range"]::-webkit-slider-runnable-track {
+  height: 14px;
+  appearance: none;
+  color: @green;
+  padding: 4px 6px;
+}
+
+.example__controls input[type="range"]::-webkit-slider-thumb {
+  width: 35px;
+  appearance: none;
+  height: 6px;
+  cursor: ew-resize;
+  background: @green;
+  border-radius: 6px;
+}
+
+.example__controls input[type="range"]::-moz-range-progress {
+  background: @green;
+}
+
+.example__controls input[type="range"]::-moz-range-track {
+  background: @white;
+}
+
+.example__controls input[type="range"]::-ms-fill-lower {
+  background: @green;
+}
+
+.example__controls input[type="range"]::-ms-fill-upper {
+  background: @white;
+}
