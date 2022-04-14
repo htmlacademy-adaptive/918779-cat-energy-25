@@ -1,0 +1,34 @@
+.site-list {
+  width: 100%;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.site-list__item {
+  box-sizing: border-box;
+  padding-top: 21px;
+  padding-bottom: 21px;
+  text-align: center;
+  border-top: 1px solid @extra-grey;
+}
+
+.site-list__link {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 500;
+  color: @black;
+  text-transform: uppercase;
+}
+
+.site-list__link:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.site-list__link:active,
+.site-list__link:focus {
+  opacity: 0.3;
+  cursor: pointer;
+}
