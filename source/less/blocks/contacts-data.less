@@ -1,3 +1,10 @@
+@media (min-width: @desktop-width) {
+  .contacts-data {
+    width: 405px;
+    box-sizing: content-box;
+  }
+}
+
 .contacts-data__header {
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
@@ -11,6 +18,25 @@
   .contacts-data__header {
     font-size: 20px;
     line-height: 24px;
+  }
+}
+
+.contacts-data__wrapper {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media (min-width: @tablet-width) {
+  .contacts-data__wrapper {
+    width: 25%;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .contacts-data__wrapper {
+    width: 40%;
   }
 }
 
@@ -34,19 +60,11 @@
     margin-top: -2px;
     margin-right: 2px;
   }
-
-  .map__contacts span:last-child {
-    margin-top: 20px;
-  }
 }
 
 @media (min-width: @desktop-width) {
   .contacts-data__address {
     text-align: left;
-  }
-
-  .map__contacts span:last-child {
-    margin-top: 20px;
   }
 }
 

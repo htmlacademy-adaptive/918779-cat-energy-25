@@ -1,6 +1,9 @@
 .program {
   padding: 0 20px;
   z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 @media (max-width: @mobile-width-only) {
@@ -14,6 +17,7 @@
 
 @media (min-width: @tablet-width) {
   .program {
+    align-items: flex-start;
     position: relative;
     padding: 0 30px;
     margin-top: 47px;
@@ -24,9 +28,10 @@
   .program {
     width: 1060px;
     margin: 0 auto;
-    display: flex;
     z-index: 2;
     margin-top: 0;
+    flex-direction: row;
+    display: flex;
   }
 }
 
@@ -36,13 +41,14 @@
 
 @media (min-width: @tablet-width) {
   .program__wrapper {
-    margin: 0 88px;
+    padding-left: 90px;
     position: relative;
   }
 }
 
 @media (min-width: @desktop-width) {
   .program__wrapper {
+    padding-left: 0;
     margin: 0;
     margin-top: 106px;
   }
@@ -61,11 +67,12 @@
 
 @media (min-width: @tablet-width) {
   .program__description {
-    width: 414px;
+    width: 500px;
     font-size: 60px;
     line-height: 60px;
     color: @black;
     text-align: left;
+    margin-top: 0;
     margin-bottom: 41px;
   }
 }
@@ -92,6 +99,7 @@
 }
 
 .program__img {
+  margin: 0 auto;
   margin-top: 30px;
   width: 280px;
   height: 270px;
@@ -109,10 +117,11 @@
   .program__img {
     width: 552px;
     height: 499px;
-    display: block;
-    position: relative;
+    display: flex;
+    position: absolute;
     top: 5px;
-    left: -45px;
+    left: calc(50% - 160px);
+    right: auto;
   }
 }
 
