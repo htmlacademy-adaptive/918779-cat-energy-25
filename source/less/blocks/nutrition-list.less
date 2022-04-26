@@ -5,15 +5,114 @@
   margin-top: 38px;
 }
 
+@media (min-width: @tablet-width) {
+  .nutrition-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 72px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .nutrition-list {
+    display: flex;
+    width: 1224px;
+  }
+}
+
 .nutrition-list__item {
   display: flex;
   margin-bottom: 16px;
+}
+
+@media (min-width: @tablet-width) {
+  .nutrition-list__item {
+    width: calc(50% - 105px);
+    margin-right: 134px;
+    margin-left: 0;
+    flex-direction: column;
+    margin-bottom: 82px;
+    padding-bottom: 45px;
+  }
+
+  .nutrition-list__item:nth-child(2n) {
+    margin-right: 0;
+  }
+
+  .nutrition-list__item:last-child {
+    margin-bottom: 0;
+  }
+
+  .nutrition-list__item:nth-child(3n) {
+    margin-bottom: 0;
+  }
+
+  .nutrition-list__item--one {
+    background: url("../../img/main-page/num01.svg");
+    background-repeat: no-repeat;
+    background-position: top 0 right 52px;
+    background-size: contain;
+  }
+
+  .nutrition-list__item--two {
+    background: url("../../img/main-page/num02.svg");
+    background-repeat: no-repeat;
+    background-position: top 0 right 14px;
+    background-size: contain;
+  }
+
+  .nutrition-list__item--three {
+    background: url("../../img/main-page/num03.svg");
+    background-repeat: no-repeat;
+    background-position: top 0 right 14px;
+    background-size: contain;
+  }
+
+  .nutrition-list__item--four {
+    background: url("../../img/main-page/num04.svg");
+    background-repeat: no-repeat;
+    background-position: top 0 right 3px;
+    background-size: contain;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .nutrition-list__item {
+    width: calc(25% - 55px);
+    margin-right: 73px;
+    margin-left: 0;
+    flex-direction: column;
+    margin-bottom: 22px;
+    padding-bottom: 42px;
+  }
+
+  .nutrition-list__item:nth-child(2n) {
+    margin-right: 74px;
+    margin-bottom: 22px;
+  }
+
+  .nutrition-list__item:nth-child(3n) {
+    margin-right: 73px;
+    margin-bottom: 22px;
+  }
+
+  .nutrition-list__item:nth-child(4n) {
+    margin-right: 0;
+    margin-bottom: 22px;
+  }
 }
 
 .nutrition-list__item img {
   width: 60px;
   height: 60px;
   background: @green;
+}
+
+@media (min-width: @tablet-width) {
+  .nutrition-list__item img {
+    width: 80px;
+    height: 80px;
+  }
 }
 
 .nutrition-list__item p {
@@ -27,4 +126,13 @@
   order: 2;
   margin-left: 20px;
   margin-top: 2px;
+}
+
+@media (min-width: @tablet-width) {
+  .nutrition-list__item p {
+    font-size: 16px;
+    line-height: 24px;
+    margin-left: 0;
+    margin-top: 31px;
+  }
 }
