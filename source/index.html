@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
     <link href="css/style.css" rel="stylesheet">
     <title>HTML Academy: Кэт энерджи</title>
   </head>
@@ -36,11 +37,11 @@
       <section class="program">
         <div class="program__wrapper">
           <h2 class="visually-hidden">Подбор программы питания для котов</h2>
-          <p>Функциональное питание для котов</p>
-          <p>Занялся собой? Займись котом!</p>
+          <p class="program__description">Функциональное питание для котов</p>
+          <p class="program__offer">Занялся собой? Займись котом!</p>
         </div>
         <picture>
-          <img class="program__img" src="img/main-page/index-can.png" width="280" height="270" alt="Большое фото упаковки питания для кошек">
+          <img class="program__img" src="img/main-page/index-can_big.png" width="709" height="609" alt="Большое фото упаковки питания для кошек">
         </picture>
         <a class="program__button" href="form.html">Подобрать программу</a>
       </section>
@@ -142,11 +143,14 @@
         <div class="map__wrapper map__wrapper--index">
           <div class="map__contacts contacts-data">
             <p class="contacts-data__header">Приглашаем <br>к сотрудничеству<br> дилеров!</p>
-            <p class="contacts-data__address">ул. Большая Конюшенная, д. 19/8<p>
-            <p class="contacts-data__city">Санкт-Петербург</p>
+            <div class="contacts-data__wrapper">
+              <p class="contacts-data__address">ул. Большая Конюшенная, д. 19/8</p>
+              <p class="contacts-data__city">Санкт-Петербург</p>
+            </div>
           </div>
         </div>
         <div class="map__location">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1996.8224465563594!2d30.315220216136684!3d59.96826866667007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5afc31%3A0x5f2ac55f567b2400!2sHTML%20Academy!5e0!3m2!1sru!2sru!4v1626203314640!5m2!1sru!2sru" style="border:0;" allowfullscreen="" loading="lazy" title="Офис компании по адресу набережная реки Карповки 5, литера П, Санкт-Петербург"></iframe>
         </div>
       </section>
 
@@ -179,5 +183,8 @@
       </section>
 
     </footer>
+
+    <script src="js/script.js"></script>
+
   </body>
 </html>

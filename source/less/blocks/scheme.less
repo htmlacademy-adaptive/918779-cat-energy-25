@@ -3,6 +3,21 @@
   padding: 0 20px;
 }
 
+@media (min-width: @tablet-width) {
+  .scheme {
+    margin-top: 47px;
+    padding: 0 30px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .scheme {
+    width: 1220px;
+    margin: 0 auto;
+    margin-top: 43px;
+  }
+}
+
 .scheme h2 {
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 36px;
@@ -11,4 +26,11 @@
   color: @black;
   margin: 0;
   padding: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .scheme h2 {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }

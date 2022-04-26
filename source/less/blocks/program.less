@@ -1,13 +1,60 @@
 .program {
   padding: 0 20px;
   z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (max-width: @mobile-width-only) {
+  .program {
+    height: 302px;
+    background: url("../img/main-page/cat_small.png"), @green;
+    background-position: top center;
+    background-repeat: no-repeat;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .program {
+    align-items: flex-start;
+    position: relative;
+    padding: 0 30px;
+    margin-top: 47px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .program {
+    width: 1060px;
+    margin: 0 auto;
+    z-index: 2;
+    margin-top: 0;
+    flex-direction: row;
+    display: flex;
+  }
 }
 
 .program__wrapper {
   margin-top: 25px;
 }
 
-.program b {
+@media (min-width: @tablet-width) {
+  .program__wrapper {
+    padding-left: 90px;
+    position: relative;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .program__wrapper {
+    padding-left: 0;
+    margin: 0;
+    margin-top: 106px;
+  }
+}
+
+.program__description {
   display: inline-block;
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 36px;
@@ -18,7 +65,19 @@
   margin-bottom: 25px;
 }
 
-.program p {
+@media (min-width: @tablet-width) {
+  .program__description {
+    width: 500px;
+    font-size: 60px;
+    line-height: 60px;
+    color: @black;
+    text-align: left;
+    margin-top: 0;
+    margin-bottom: 41px;
+  }
+}
+
+.program__offer {
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 14px;
   line-height: 14px;
@@ -30,10 +89,40 @@
   margin: 0;
 }
 
+@media (min-width: @tablet-width) {
+  .program__offer {
+    font-size: 20px;
+    line-height: 20px;
+    color: @black;
+    text-align: left;
+  }
+}
+
 .program__img {
+  margin: 0 auto;
   margin-top: 30px;
   width: 280px;
   height: 270px;
+}
+
+@media (min-width: @tablet-width) {
+  .program__img {
+    margin-top: 20px;
+    width: 709px;
+    height: 609px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .program__img {
+    width: 552px;
+    height: 499px;
+    display: flex;
+    position: absolute;
+    top: 5px;
+    left: calc(50% - 160px);
+    right: auto;
+  }
 }
 
 .program__button {
@@ -63,4 +152,30 @@
 .program__button:focus {
   opacity: 0.5;
   cursor: pointer;
+}
+
+@media (min-width: @tablet-width) {
+  .program__button {
+    font-size: 20px;
+    line-height: 20px;
+    display: inline-block;
+    position: absolute;
+    top: 231px;
+    left: 120px;
+    padding-top: 17px;
+    padding-bottom: 17px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .program__button {
+    font-size: 20px;
+    line-height: 20px;
+    display: inline-block;
+    position: absolute;
+    top: 337px;
+    left: 30px;
+    padding-top: 17px;
+    padding-bottom: 17px;
+  }
 }
