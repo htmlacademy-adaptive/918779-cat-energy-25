@@ -2,17 +2,15 @@
   list-style: none;
   padding: 0;
   margin: 0;
-  padding-bottom: 22px;
-  margin-top: 22px;
+  padding-top: 9px;
+  padding-left: 46px;
+  padding-bottom: 8px;
+  margin-bottom: 8px;
+  box-sizing: border-box;
 }
 
-.additionally-list__item label {
-  position: relative;
-  display: block;
-  cursor: pointer;
-  user-select: none;
-  padding-top: 4px;
-  color: @special-black;
+.additionally-list:last-child {
+  margin-bottom: 0;
 }
 
 .additionally-list__input-checkbox + label::before {
@@ -36,23 +34,16 @@
   background: url("../img/form/icon_check.svg");
 }
 
-.additionally-list__item {
-  padding-left: 46px;
-  padding-top: 9px;
-  padding-bottom: 8px;
-  margin-bottom: 8px;
-  box-sizing: border-box;
-}
-
-.additionally-list__item:last-child {
-  margin-bottom: 0;
-}
-
 .additionally-list__label {
+  position: relative;
+  display: block;
+  padding-top: 4px;
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   line-height: 18px;
   font-weight: 400;
-  color: @black;
+  color: @special-black;
   text-transform: uppercase;
+  cursor: pointer;
+  user-select: none;
 }

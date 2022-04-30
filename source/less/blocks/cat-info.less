@@ -1,12 +1,26 @@
 .cat-info {
   width: 100%;
   box-sizing: border-box;
+  display: grid;
+  grid-row-gap: 14px;
+}
+
+@media (min-width: @tablet-width) {
+  .cat-info {
+    padding: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .cat-info {
+    width: calc(50% - 40px);
+    padding: 0;
+  }
 }
 
 .cat-info__wrapper {
   display: flex;
   align-items: center;
-  margin-top: 14px;
 }
 
 .cat-info__label {

@@ -4,9 +4,37 @@
   padding: 20px 0;
   margin: 0;
   margin-top: 22px;
-  border-top: 1px solid @direction-grey;
-  border-bottom: 1px solid @direction-grey;
   box-sizing: border-box;
+}
+
+@media (min-width: @tablet-width) {
+  .program-target {
+    margin-top: 40px;
+    border: none;
+    padding: 20px 0;
+  }
+}
+
+.program-target__list {
+  margin: 0;
+  padding: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .program-target__list {
+    padding: 25px 0;
+    padding-left: 25px;
+    border: 1px solid @special-grey;
+    box-sizing: border-box;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .program-target {
+    width: calc(50% - 40px);
+    padding: 0;
+    margin: 0;
+  }
 }
 
 .program-target__label {

@@ -11,6 +11,26 @@
   box-sizing: border-box;
 }
 
+@media (min-width: @tablet-width) {
+  .banner {
+    background: url("../img/catalog/gift_banner_medium.png");
+    min-height: 200px;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    margin-top: 80px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .banner {
+    width: 245px;
+    background: url("../img/catalog/gift_banner_big.png");
+    margin: 0;
+    height: 289px;
+  }
+}
+
 .banner__offer {
   font-family: "Arial", sans-serif;
   font-size: 16px;
@@ -31,4 +51,38 @@
   background: url("../img/catalog/icon_gift.svg");
   bottom: 120px;
   left: calc(50% - 39px);
+}
+
+@media (min-width: @tablet-width) {
+  .banner__offer {
+    text-align: left;
+    width: 100%;
+    padding-left: 58%;
+  }
+
+  .banner__offer::before {
+    position: absolute;
+    content: "";
+    width: 80px;
+    height: 83px;
+    bottom: 0;
+    left: 12%;
+    right: auto;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .banner__offer {
+    padding: 0;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 140px;
+  }
+
+  .banner__offer::before {
+    width: 80px;
+    height: 83px;
+    bottom: 120px;
+    left: 35%;
+  }
 }

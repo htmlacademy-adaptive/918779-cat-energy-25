@@ -4,6 +4,22 @@
   padding-bottom: 35px;
 }
 
+@media (min-width: @tablet-width) {
+  .program-form {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .program-form {
+    width: 1220px;
+    margin: 0 auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
 .program-form__heading {
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 14px;
@@ -16,39 +32,18 @@
   box-sizing: border-box;
 }
 
-.program-form__submit {
-  display: block;
-  box-sizing: border-box;
-  margin: 0 auto;
+@media (min-width: @tablet-width) {
+  .program-form__heading {
+    padding: 0;
+    padding-left: 40px;
+    margin-top: 56px;
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
-.program-form__button {
-  font-family: "Oswald", "Arial", sans-serif;
-  font-size: 16px;
-  line-height: 20px;
-  font-weight: 400;
-  color: @white;
-  text-transform: uppercase;
-  width: 100%;
-  padding-top: 11px;
-  padding-right: 26px;
-  padding-bottom: 9px;
-  padding-left: 26px;
-  margin: 0 auto;
-  background-color: @green;
-  display: flex;
-  justify-content: center;
-  box-sizing: border-box;
-}
-
-.program-form__submit small {
-  font-family: "Arial", sans-serif;
-  font-size: 14px;
-  line-height: 16px;
-  font-weight: 400;
-  color: @black;
-  display: inline-block;
-  width: 100%;
-  text-align: center;
-  margin-top: 23px;
+@media (min-width: @desktop-width) {
+  .program-form__heading {
+    padding-left: 0;
+  }
 }

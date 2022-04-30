@@ -8,10 +8,48 @@
   margin-top: 12px;
 }
 
+@media (min-width: @tablet-width) {
+  .table-list {
+    margin: 0;
+    width: 50%;
+    margin-top: 5px;
+  }
+}
+
 .table-list__item {
   font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 14px;
   font-weight: 400;
   color: @dark-grey;
+}
+
+@media (min-width: @tablet-width) {
+  .table-list__item {
+    font-size: 16px;
+    line-height: 20px;
+    width: 50%;
+    text-align: right;
+  }
+
+  .table-list__item--volume {
+    width: 392px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .table-list__item {
+    align-self: flex-end;
+    padding-bottom: 2px;
+    box-sizing: border-box;
+  }
+
+  .table-list__item--volume {
+    width: 250px;
+    text-align: left;
+  }
+
+  .table-list__item--price {
+    width: 100px;
+  }
 }
