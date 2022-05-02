@@ -1307,14 +1307,14 @@ template {
 @media (min-width: 768px) {
   .additionally__list {
     display: grid;
-    grid-template-columns: repeat(auto-fill, 282px);
+    grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 60px;
   }
 }
 @media (min-width: 1440px) {
   .additionally__list {
     display: grid;
-    grid-template-columns: repeat(auto-fill, 245px);
+    grid-template-columns: repeat(4, 1fr);
     grid-column-gap: 80px;
   }
 }
@@ -2234,14 +2234,14 @@ template {
 }
 @media (min-width: 768px) {
   .products__list {
-    grid-template-columns: repeat(auto-fill, 324px);
+    grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 60px;
     grid-row-gap: 60px;
   }
 }
 @media (min-width: 1440px) {
   .products__list {
-    grid-template-columns: repeat(auto-fill, 245px);
+    grid-template-columns: repeat(4, 1fr);
     grid-column-gap: 80px;
     grid-row-gap: 80px;
   }
