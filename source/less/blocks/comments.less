@@ -3,6 +3,21 @@
   margin-top: 20px;
 }
 
+@media (min-width: @tablet-width) {
+  .comments {
+    margin-top: 65px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .comments {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
 .comments__title {
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 24px;
@@ -10,7 +25,19 @@
   font-weight: 400;
   color: @black;
   margin-bottom: 40px;
-  padding-right: 20px;
+}
+
+@media (min-width: @tablet-width) {
+  .comments__title {
+    font-size: 36px;
+    line-height: 36px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .comments__wrapper {
+    margin-top: 40px;
+  }
 }
 
 .comments__message {
