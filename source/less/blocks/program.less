@@ -1,17 +1,21 @@
 .program {
   padding: 0 20px;
-  z-index: 2;
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
 }
 
 @media (max-width: @mobile-width-only) {
-  .program {
+  .program::before {
+    content: "";
+    width: 100%;
     height: 302px;
     background: url("../img/main-page/cat_small.png"), @green;
     background-position: top center;
     background-repeat: no-repeat;
+    position: absolute;
+    z-index: -1;
   }
 }
 
@@ -132,15 +136,12 @@
   font-weight: 400;
   color: @white;
   text-transform: uppercase;
-  padding-top: 10px;
-  padding-right: 26px;
-  padding-bottom: 12px;
-  padding-left: 26px;
-  margin: 0 auto;
-  margin-top: 0;
+  width: 100%;
   background-color: @green;
   display: flex;
   justify-content: center;
+  align-items: center;
+  min-height: 40px;
 }
 
 .program__button:hover {
@@ -158,12 +159,12 @@
   .program__button {
     font-size: 20px;
     line-height: 20px;
-    display: inline-block;
     position: absolute;
     top: 231px;
     left: 120px;
-    padding-top: 17px;
-    padding-bottom: 17px;
+    width: auto;
+    padding: 0 26px;
+    min-height: 54px;
   }
 }
 
@@ -171,11 +172,8 @@
   .program__button {
     font-size: 20px;
     line-height: 20px;
-    display: inline-block;
     position: absolute;
     top: 337px;
     left: 30px;
-    padding-top: 17px;
-    padding-bottom: 17px;
   }
 }
