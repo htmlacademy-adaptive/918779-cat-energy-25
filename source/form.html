@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="page" lang="ru">
+<html lang="ru">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1" />
@@ -10,7 +10,7 @@
   <body class="page__body">
     <header class="page-header">
       <div class="page-header__wrapper">
-        <a class="page-header__logo">
+        <a class="page-header__logo" href="index.html">
           <picture>
             <img class="page-header__img" src="img/logo-small.svg" width="191" height="39" alt="Логотип КэтЭнерджи">
           </picture>
@@ -22,13 +22,13 @@
           <div class="main-nav__wrapper">
             <ul class="main-nav__list site-list">
               <li class="site-list__item">
-                <a class="site-list__link">Главная</a>
+                <a class="site-list__link" href="index.html">Главная</a>
               </li>
               <li class="site-list__item">
                 <a class="site-list__link" href="catalog.html">Каталог продукции</a>
               </li>
               <li class="site-list__item site-list__item--current">
-                <a class="site-list__link" href="form.html">Подбор программы</a>
+                <a class="site-list__link">Подбор программы</a>
               </li>
             </ul>
           </div>
@@ -79,21 +79,29 @@
             </div>
 
             <div class="cat-owner">
-              <h3 class="cat-owner__title">Контактные данные (владельца кота)</h3>
+              <div class="cat-owner__header header-line">
+                <div class="header-line__wrapper">
+                  <h3 class="cat-owner__title">Контактные данные (владельца кота)</h3>
+                </div>
+              </div>
               <div class="cat-owner__inner">
                 <div class="cat-owner__wrapper">
                   <label class="cat-owner__label" for="cat-owner-email">E-mail:*</label>
-                  <input class="cat-owner__email" type="email" name="cat-owner-email" id="cat-owner-email" placeholder="kuklachev@gmail.com" required>
+                  <input class="cat-owner__input cat-owner__email" type="email" name="cat-owner-email" id="cat-owner-email" placeholder="kuklachev@gmail.com" required>
                 </div>
                 <div class="cat-owner__wrapper">
                   <label class="cat-owner__label" for="cat-owner-phone">Телефон:*</label>
-                  <input class="cat-owner__phone" type="tel" name="cat-owner-phone" id="cat-owner-phone" placeholder="8 (960) 900-60-90" required>
+                  <input class="cat-owner__input cat-owner__phone" type="tel" name="cat-owner-phone" id="cat-owner-phone" placeholder="8 (960) 900-60-90" required>
                 </div>
               </div>
             </div>
 
             <div class="comments">
-              <h3 class="comments__title">Комментарии</h3>
+              <div class="comments__header header-line">
+                <div class="header-line__wrapper">
+                  <h3 class="comments__title">Комментарий</h3>
+                </div>
+              </div>
               <div class="comments__wrapper">
                 <label class="visually-hidden" for="comments-text">Комментарии о повадках кота:</label>
                 <textarea class="comments__message" name="text" id="comments-text" placeholder="Расскажите обо всех повадках кота"></textarea>
@@ -101,7 +109,11 @@
             </div>
 
             <div class="additionally">
-              <div class="additionally__title">Дополнительно:</div>
+              <div class="additionally__header header-line">
+                <div class="header-line__wrapper">
+                  <h3 class="additionally__title">Дополнительно:</h3>
+                </div>
+              </div>
               <ul class="additionally__list">
                 <li class="additionally-list">
                   <input class="visually-hidden additionally__input additionally-list__input-checkbox" type="checkbox" name="sweetener" id="add-sweetener" checked>

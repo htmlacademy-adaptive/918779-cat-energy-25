@@ -21,16 +21,33 @@
 .comments__title {
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 24px;
-  line-height: 26px;
+  line-height: 24px;
   font-weight: 400;
   color: @black;
-  margin-bottom: 40px;
+  background: @white;
+  margin: 0;
+  padding: 0;
+  padding-left: 20px;
+  padding-right: 24px;
+  box-sizing: border-box;
+  display: inline-block;
 }
 
 @media (min-width: @tablet-width) {
   .comments__title {
     font-size: 36px;
     line-height: 36px;
+    margin-left: 30px;
+    padding-left: 30px;
+    padding-right: 37px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .comments__title {
+    padding-left: 40px;
+    padding-right: 37px;
+    margin-left: -40px;
   }
 }
 

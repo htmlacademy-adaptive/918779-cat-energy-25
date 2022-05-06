@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="page" lang="ru">
+<html lang="ru">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1" />
@@ -10,7 +10,7 @@
   <body class="page__body">
     <header class="page-header">
       <div class="page-header__wrapper">
-        <a class="page-header__logo">
+        <a class="page-header__logo" href="index.html">
           <picture>
             <img class="page-header__img" src="img/logo-small.svg" width="191" height="39" alt="Логотип КэтЭнерджи">
           </picture>
@@ -22,10 +22,10 @@
           <div class="main-nav__wrapper">
             <ul class="main-nav__list site-list">
               <li class="site-list__item">
-                <a class="site-list__link">Главная</a>
+                <a class="site-list__link" href="index.html">Главная</a>
               </li>
               <li class="site-list__item site-list__item--current">
-                <a class="site-list__link" href="catalog.html">Каталог продукции</a>
+                <a class="site-list__link">Каталог продукции</a>
               </li>
               <li class="site-list__item">
                 <a class="site-list__link" href="form.html">Подбор программы</a>
@@ -234,7 +234,12 @@
       </section>
 
       <section class="related-products">
-        <h2 class="related-products__title">Дополнительные товары</h2>
+        <div class="related-products__header header-line">
+          <div class="header-line__wrapper">
+            <h2 class="related-products__title">Дополнительные товары</h2>
+          </div>
+        </div>
+        <div class="related-products__container">
         <div class="related-products__wrapper">
           <ul class="related-products__list">
             <li class="related-products-list">
@@ -282,6 +287,7 @@
             <h2 class="visually-hidden">Рекламный баннер</h2>
             <p class="banner__offer">Закажите все <br> и получите чехол для <br> кота в подарок!</p>
           </div>
+        </div>
         </div>
       </section>
     </main>

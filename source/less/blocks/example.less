@@ -13,7 +13,7 @@
     box-sizing: border-box;
     border-top: 1px solid @extra-grey;
     padding-bottom: 70px;
-    box-shadow: inset 0 -462px 0 0 @grey;
+    box-shadow: inset 0 -462px 0 0 @light-grey;
   }
 }
 
@@ -24,17 +24,7 @@
     border: none;
     min-height: 656px;
     position: relative;
-  }
-
-  .example::after {
-    width: 28%;
-    height: 462px;
-    bottom: 0;
-    right: 0;
-    position: absolute;
-    content: "";
-    background: @white;
-    box-shadow: inset 0 -462px 0 0 @light-grey;
+    box-shadow: inset 0 -462px 0 0 @grey;
   }
 }
 
@@ -202,7 +192,7 @@
 
 @media (min-width: @desktop-width) {
   .example__column dd {
-    background: @light-grey;
+    background: @grey;
   }
 }
 
@@ -292,6 +282,19 @@
   line-height: 20px;
   font-weight: 400;
   text-transform: uppercase;
+  cursor: pointer;
+  text-decoration: underline dotted @underline-grey;
+  text-underline-offset: 7px;
+}
+
+.example__toggle:hover {
+  text-decoration: underline @underline-grey;
+  text-underline-offset: 7px;
+}
+
+.example__toggle:active,
+.example__toggle:focus {
+  text-decoration: none;
 }
 
 @media (min-width: @tablet-width) {
@@ -406,14 +409,27 @@
     width: 34px;
     appearance: none;
     height: 34px;
-    cursor: ew-resize;
+    cursor: pointer;
     background: @green;
     border-radius: 50%;
+    border: 1 solid @green;
     position: absolute;
     top: 19px;
     left: calc(50% - 18px);
+    box-shadow: inset 0 0 0 13px @white,
+      inset 0 0 0 1px @example-grey;
     filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.16));
-    box-shadow: inset 0 0 0 13px @white;
+  }
+
+  .example__controls input[type="range"]::-webkit-slider-thumb:hover {
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.19));
+  }
+
+  .example__controls input[type="range"]::-webkit-slider-thumb:active,
+  .example__controls input[type="range"]::-webkit-slider-thumb:focus {
+    box-shadow: inset 0 0 0 13px @white,
+      inset 0 0 0 1px @basic-green;
+    filter: drop-shadow(0 3px 5px rgba(0, 0, 0, 0.2));
   }
 
   .example__controls input[type="range"]::-moz-range-progress {
