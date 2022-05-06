@@ -137,22 +137,22 @@
   color: @white;
   text-transform: uppercase;
   width: 100%;
-  background-color: @green;
+  background: @basic-green;
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 40px;
+  cursor: pointer;
 }
 
 .program__button:hover {
-  opacity: 0.7;
-  cursor: pointer;
+  background: @green;
 }
 
 .program__button:active,
 .program__button:focus {
-  opacity: 0.5;
-  cursor: pointer;
+  background: @green;
+  color: @active-white;
 }
 
 @media (min-width: @tablet-width) {

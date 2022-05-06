@@ -35,3 +35,24 @@
   max-width: 100%;
   overflow-x: hidden;
 }
+
+.header-line {
+  position: relative;
+}
+
+.header-line::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  height: 2px;
+  width: 100%;
+  background: @green;
+  z-index: -1;
+}
+
+@media (min-width: @desktop-width) {
+  .header-line__wrapper {
+    max-width: 1220px;
+    margin: 0 auto;
+  }
+}

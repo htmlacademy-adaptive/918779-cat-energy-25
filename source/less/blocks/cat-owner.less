@@ -22,19 +22,33 @@
 .cat-owner__title {
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 24px;
-  line-height: 26px;
+  line-height: 24px;
   font-weight: 400;
   color: @black;
-  width: 190px;
+  background: @white;
   margin: 0;
   padding: 0;
+  padding-left: 20px;
+  padding-right: 24px;
+  box-sizing: border-box;
+  display: inline-block;
 }
 
 @media (min-width: @tablet-width) {
   .cat-owner__title {
     font-size: 36px;
     line-height: 36px;
-    width: 525px;
+    margin-left: 30px;
+    padding-left: 30px;
+    padding-right: 37px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .cat-owner__title {
+    padding-left: 40px;
+    padding-right: 37px;
+    margin-left: -40px;
   }
 }
 
@@ -83,8 +97,7 @@
   flex-shrink: 0;
 }
 
-.cat-owner__email,
-.cat-owner__phone {
+.cat-owner__input {
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   line-height: 18px;
@@ -98,4 +111,17 @@
   box-sizing: border-box;
   margin-left: 11px;
   width: 100%;
+  position: relative;
+}
+
+.cat-owner__email {
+  background: url("../img/form/icon_email.svg");
+  background-repeat: no-repeat;
+  background-position: right 20px center;
+}
+
+.cat-owner__phone {
+  background: url("../img/form/icon_phone.svg");
+  background-repeat: no-repeat;
+  background-position: right 18px center;
 }

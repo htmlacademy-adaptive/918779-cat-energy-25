@@ -3,6 +3,7 @@
   padding: 0;
   margin: 0;
   margin-top: 38px;
+  counter-reset: nutrition-program;
 }
 
 @media (min-width: @tablet-width) {
@@ -33,6 +34,23 @@
     flex-direction: column;
     margin-bottom: 82px;
     padding-bottom: 45px;
+    counter-increment: nutrition-program;
+    position: relative;
+  }
+
+  .nutrition-list__item::after {
+    content: counter(nutrition-program);
+    position: absolute;
+    font-family: "Oswald", "Arial", sans-serif;
+    font-size: 280px;
+    line-height: 280px;
+    font-weight: 400;
+    color: @grey;
+    z-index: -1;
+    top: auto;
+    left: auto;
+    right: 0;
+    bottom: 0;
   }
 
   .nutrition-list__item:nth-child(2n) {
@@ -45,34 +63,6 @@
 
   .nutrition-list__item:nth-child(3n) {
     margin-bottom: 0;
-  }
-
-  .nutrition-list__item--one {
-    background: url("../img/main-page/num01.svg");
-    background-repeat: no-repeat;
-    background-position: top 0 right 52px;
-    background-size: contain;
-  }
-
-  .nutrition-list__item--two {
-    background: url("../img/main-page/num02.svg");
-    background-repeat: no-repeat;
-    background-position: top 0 right 14px;
-    background-size: contain;
-  }
-
-  .nutrition-list__item--three {
-    background: url("../img/main-page/num03.svg");
-    background-repeat: no-repeat;
-    background-position: top 0 right 14px;
-    background-size: contain;
-  }
-
-  .nutrition-list__item--four {
-    background: url("../img/main-page/num04.svg");
-    background-repeat: no-repeat;
-    background-position: top 0 right 3px;
-    background-size: contain;
   }
 }
 

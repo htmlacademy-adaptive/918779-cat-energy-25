@@ -5,6 +5,7 @@
   padding-top: 25px;
   padding-bottom: 25px;
   box-sizing: border-box;
+  box-shadow: inset 0 -1px 0 0 @title-grey;
 }
 
 @media (min-width: @tablet-width) {
@@ -75,16 +76,18 @@
   width: 100%;
   padding: 11px 26px 9px;
   margin: 0 auto;
-  background-color: @green;
+  background: @basic-green;
   display: flex;
   justify-content: center;
   box-sizing: border-box;
 }
 
 .products-list__button:hover {
-  background-color: #5eaa2f;
+  background: @green;
 }
 
-.products-list__button:active {
-  background-color: #5eaa2f;
+.products-list__button:active,
+.products-list__button:focus {
+  background: @green;
+  color: @active-white;
 }

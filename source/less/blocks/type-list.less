@@ -21,7 +21,6 @@
 }
 
 .type-list__item a:hover {
-  opacity: 0.9;
   cursor: pointer;
 }
 
@@ -248,6 +247,17 @@
   top: 2px;
 }
 
+.type-list__item a:hover::after,
+.type-list__item a:focus::after,
+.type-list__item a:active::after {
+  content: "";
+  width: 32px;
+  height: 10px;
+  position: absolute;
+  background: url("../img/main-page/icon_arrow_hover.svg");
+  background-repeat: no-repeat;
+}
+
 @media (min-width: @tablet-width) {
   .type-list__item a {
     font-size: 20px;
@@ -257,13 +267,13 @@
   .type-list__item a::after {
     content: "";
     left: 132px;
-    top: 6px;
+    top: 8px;
   }
 
   .type-list__item--pro.type-list__item a::after {
     content: "";
     left: 128px;
-    top: 7px;
+    top: 9px;
   }
 }
 
@@ -271,12 +281,12 @@
   .type-list__item a::after {
     content: "";
     left: 134px;
-    top: 5px;
+    top: 8px;
   }
 
   .type-list__item--pro.type-list__item a::after {
     content: "";
     left: 128px;
-    top: 7px;
+    top: 9px;
   }
 }

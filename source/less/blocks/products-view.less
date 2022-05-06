@@ -1,26 +1,32 @@
 .products-view {
   background: @white;
-  box-shadow: inset 0 100px 0 0 @white,
-    inset 0 102px 0 0 @grey,
-    inset 0 -2px 0 0 @grey,
-    inset 2px 0 0 0 @grey,
-    inset -2px 0 0 0 @grey;
+}
+
+@media (min-width: @tablet-width) {
+  .products-view {
+    box-shadow: inset 0 100px 0 0 @white,
+      inset 0 102px 0 0 @grey,
+      inset 0 -2px 0 0 @grey,
+      inset 2px 0 0 0 @grey,
+      inset -2px 0 0 0 @grey;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
 }
 
 .products-view__wrapper {
-  display: grid;
-  grid-template-rows: 1fr auto auto;
-  align-items: end;
   box-sizing: border-box;
   padding-bottom: 21px;
+  min-height: 97px;
+  display: flex;
+  flex-direction: column;
 }
 
 @media (min-width: @tablet-width) {
   .products-view__wrapper {
-    display: grid;
-    grid-template-rows: 1fr auto auto;
-    align-items: end;
-    box-sizing: border-box;
+    min-height: 212px;
+    padding-bottom: 87px;
   }
 }
 
@@ -34,6 +40,56 @@
   color: @extra-black;
   margin: 0;
   padding: 0;
+  padding-top: 53px;
+  position: relative;
+}
+
+@media (min-width: @tablet-width) {
+  .products-view__header {
+    font-size: 20px;
+    line-height: 22px;
+    padding-top: 109px;
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .products-view__header {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+.products-view__header::before {
+  position: absolute;
+  content: "";
+  width: 2px;
+  height: 30px;
+  background: @products-grey;
+  top: 0;
+  left: 50%;
+  right: auto;
+}
+
+.products-view__header::after {
+  position: absolute;
+  content: "";
+  width: 2px;
+  height: 30px;
+  background: @products-grey;
+  top: 0;
+  left: 50%;
+  right: auto;
+  transform: rotate(90deg);
+}
+
+@media (min-width: @tablet-width) {
+  .products-view__header::before,
+  .products-view__header::after {
+
+    height: 60px;
+  }
 }
 
 .products-view__text {
@@ -83,7 +139,9 @@
   background-color: @title-grey;
 }
 
-.products-view__button:active {
+.products-view__button:active,
+.products-view__button:focus {
   background-color: @title-grey;
   color: @dark-grey;
+  opacity: 0.3;
 }
