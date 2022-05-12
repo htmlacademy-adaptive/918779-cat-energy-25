@@ -3,6 +3,10 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
+    <link rel="icon" href="img/favicon/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicon/apple.png"> <!-- 180×180 -->
+    <link rel="manifest" href="manifest.webmanifest">
     <link href="css/style.css" rel="stylesheet">
     <title>HTML Academy: Кэт энерджи</title>
   </head>
@@ -12,6 +16,8 @@
       <div class="page-header__wrapper">
         <a class="page-header__logo" href="index.html">
           <picture>
+            <source srcset="img/logo-big.svg" media="(min-width: 1280px)">
+            <source srcset="img/logo-medium.svg" media="(min-width: 768px)">
             <img class="page-header__img" src="img/logo-small.svg" width="191" height="39" alt="Логотип КэтЭнерджи">
           </picture>
         </a>
@@ -45,7 +51,9 @@
             <div class="products-list__wrapper">
               <div class="products-list__image">
                 <picture>
-                  <img class="products-list__img" src="img/catalog/cat_energy_chicken_500.png" width="140" height="112" alt="Фото упаковки питания для котов Кэт Энерджи Про c курицей 500 грамм">
+                  <source srcset="img/catalog/cat_energy_chicken_500-big.png 1x, img/catalog/cat_energy_chicken_500-big@2x.png 2x" media="(min-width: 1280px)">
+                  <source srcset="img/catalog/cat_energy_chicken_500-medium.png 1x, img/catalog/cat_energy_chicken_500-medium@2x.png 2x" media="(min-width: 768px)">
+                  <img class="products-list__img" src="img/catalog/cat_energy_chicken_500-small.png" srcset="img/catalog/cat_energy_chicken_500-small@2x.png 2x" width="140" height="112" alt="Фото упаковки питания для котов Кэт Энерджи Про c курицей 500 грамм">
                 </picture>
               </div>
               <table class="products-list__table products-table">
@@ -71,11 +79,13 @@
             <div class="products-list__wrapper">
               <div class="products-list__image">
                 <picture>
-                  <img class="products-list__img" src="img/catalog/cat_energy_chicken_1000.png" width="140" height="112" alt="Фото упаковки питания для котов Кэт Энерджи Про c курицей 1000 грамм">
+                  <source srcset="img/catalog/cat_energy_chicken_1000-big.png 1x, img/catalog/cat_energy_chicken_1000-big@2x.png 2x" media="(min-width: 1280px)">
+                  <source srcset="img/catalog/cat_energy_chicken_1000-medium.png 1x, img/catalog/cat_energy_chicken_1000-medium@2x.png 2x" media="(min-width: 768px)">
+                  <img class="products-list__img" src="img/catalog/cat_energy_chicken_1000-small.png" srcset="img/catalog/cat_energy_chicken_1000-small@2x.png 2x" width="140" height="112" alt="Фото упаковки питания для котов Кэт Энерджи Про c курицей 1000 грамм">
                 </picture>
               </div>
               <table class="products-list__table products-table">
-                <caption class="products-table__name">Cat Energy Pro 1000 г</caption>
+                <caption class="products-table__name">Cat Energy Pro 1000&nbsp;г</caption>
                 <tr class="products-table__row">
                   <td>Масса</td>
                   <td>1000 г.</td>
@@ -97,11 +107,13 @@
             <div class="products-list__wrapper">
               <div class="products-list__image">
                 <picture>
-                  <img class="products-list__img" src="img/catalog/cat_energy_fish_500.png" width="140" height="112" alt="Фото упаковки питания для котов Кэт Энерджи Про c рыбой 500 грамм">
+                  <source srcset="img/catalog/cat_energy_fish_500-big.png 1x, img/catalog/cat_energy_fish_500-big@2x.png 2x" media="(min-width: 1280px)">
+                  <source srcset="img/catalog/cat_energy_fish_500-medium.png 1x, img/catalog/cat_energy_fish_500-medium@2x.png 2x" media="(min-width: 768px)">
+                  <img class="products-list__img" src="img/catalog/cat_energy_fish_500-small.png" srcset="img/catalog/cat_energy_fish_500-small@2x.png 2x" width="140" height="112" alt="Фото упаковки питания для котов Кэт Энерджи Про c рыбой 500 грамм">
                 </picture>
               </div>
               <table class="products-list__table products-table">
-                <caption class="products-table__name">Cat Energy Pro 500 г</caption>
+                <caption class="products-table__name">Cat Energy Pro 500&nbsp;г</caption>
                 <tr class="products-table__row">
                   <td>Масса</td>
                   <td>500 г.</td>
@@ -123,11 +135,13 @@
             <div class="products-list__wrapper">
               <div class="products-list__image">
                 <picture>
-                  <img class="products-list__img" src="img/catalog/cat_energy_fish_1000.png" width="140" height="112" alt="Фото упаковки питания для котов Кэт Энерджи Про c рыбой 1000 грамм">
+                  <source srcset="img/catalog/cat_energy_fish_1000-big.png 1x, img/catalog/cat_energy_fish_1000-big@2x.png 2x" media="(min-width: 1280px)">
+                  <source srcset="img/catalog/cat_energy_fish_1000-medium.png 1x, img/catalog/cat_energy_fish_1000-medium@2x.png 2x" media="(min-width: 768px)">
+                  <img class="products-list__img" src="img/catalog/cat_energy_fish_1000-small.png" srcset="img/catalog/cat_energy_fish_1000-small@2x.png 2x" width="140" height="112" alt="Фото упаковки питания для котов Кэт Энерджи Про c рыбой 1000 грамм">
                 </picture>
               </div>
               <table class="products-list__table products-table">
-                <caption class="products-table__name">Cat Energy Pro 1000 г</caption>
+                <caption class="products-table__name">Cat Energy Pro 1000&nbsp;г</caption>
                 <tr class="products-table__row">
                   <td>Масса</td>
                   <td>500 г.</td>
@@ -149,11 +163,13 @@
             <div class="products-list__wrapper">
               <div class="products-list__image">
                 <picture>
-                  <img class="products-list__img" src="img/catalog/cat_energy_buckwheat_500.png" width="140" height="112" alt="Фото упаковки питания для котов Кэт Энерджи Слим c гречкой 500 грамм">
+                  <source srcset="img/catalog/cat_energy_buckwheat_500-big.png 1x, img/catalog/cat_energy_buckwheat_500-big@2x.png 2x" media="(min-width: 1280px)">
+                  <source srcset="img/catalog/cat_energy_buckwheat_500-medium.png 1x, img/catalog/cat_energy_buckwheat_500-medium@2x.png 2x" media="(min-width: 768px)">
+                  <img class="products-list__img" src="img/catalog/cat_energy_buckwheat_500-small.png" srcset="img/catalog/cat_energy_buckwheat_500-small@2x.png 2x" width="140" height="112" alt="Фото упаковки питания для котов Кэт Энерджи Слим c гречкой 500 грамм">
                 </picture>
               </div>
               <table class="products-list__table products-table">
-                <caption class="products-table__name">Cat Energy Slim 500 г</caption>
+                <caption class="products-table__name">Cat Energy Slim 500&nbsp;г</caption>
                 <tr class="products-table__row">
                   <td>Масса</td>
                   <td>500 г.</td>
@@ -175,11 +191,13 @@
             <div class="products-list__wrapper">
               <div class="products-list__image">
                 <picture>
-                  <img class="products-list__img" src="img/catalog/cat_energy_buckwheat_1000.png" width="140" height="112" alt="Фото упаковки питания для котов Кэт Энерджи Слим c гречкой 1000 грамм">
+                  <source srcset="img/catalog/cat_energy_buckwheat_1000-big.png 1x, img/catalog/cat_energy_buckwheat_1000-big@2x.png 2x" media="(min-width: 1280px)">
+                  <source srcset="img/catalog/cat_energy_buckwheat_1000-medium.png 1x, img/catalog/cat_energy_buckwheat_1000-medium@2x.png 2x" media="(min-width: 768px)">
+                  <img class="products-list__img" src="img/catalog/cat_energy_buckwheat_1000-small.png" srcset="img/catalog/cat_energy_buckwheat_1000-small@2x.png 2x" width="140" height="112" alt="Фото упаковки питания для котов Кэт Энерджи Слим c гречкой 1000 грамм">
                 </picture>
               </div>
               <table class="products-list__table products-table">
-                <caption class="products-table__name">Cat Energy Slim 1000 г</caption>
+                <caption class="products-table__name">Cat Energy Slim 1000&nbsp;г</caption>
                 <tr class="products-table__row">
                   <td>Масса</td>
                   <td>500 г.</td>
@@ -201,11 +219,13 @@
             <div class="products-list__wrapper">
               <div class="products-list__image">
                 <picture>
-                  <img class="products-list__img" src="img/catalog/cat_energy_rice_500.png" width="140" height="112" alt="Фото упаковки питания для котов Кэт Энерджи Слим c рисом 500 грамм">
+                  <source srcset="img/catalog/cat_energy_rice_500-big.png 1x, img/catalog/cat_energy_rice_500-big@2x.png 2x" media="(min-width: 1280px)">
+                  <source srcset="img/catalog/cat_energy_rice_500-medium.png 1x, img/catalog/cat_energy_rice_500-medium@2x.png 2x" media="(min-width: 768px)">
+                  <img class="products-list__img" src="img/catalog/cat_energy_rice_500-small.png" srcset="img/catalog/cat_energy_rice_500-small@2x.png 2x" width="140" height="112" alt="Фото упаковки питания для котов Кэт Энерджи Слим c рисом 500 грамм">
                 </picture>
               </div>
               <table class="products-list__table products-table">
-                <caption class="products-table__name">Cat Energy Slim 500 г</caption>
+                <caption class="products-table__name">Cat Energy Slim 500&nbsp;г</caption>
                 <tr class="products-table__row">
                   <td>Масса</td>
                   <td>500 г.</td>

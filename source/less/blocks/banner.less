@@ -1,7 +1,7 @@
 .banner {
-  min-height: 289px;
+  min-height: 290px;
   margin: 35px 20px;
-  background: url("../img/catalog/gift_banner.png");
+  background: @index-green;
   background-position: top center;
   background-repeat: no-repeat;
   display: flex;
@@ -9,25 +9,68 @@
   align-items: flex-end;
   padding-bottom: 43px;
   box-sizing: border-box;
+  position: relative;
+}
+
+.banner::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 290px;
+  background: url("../img/catalog/gift_banner-small.png");
+  background-position: top center;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+@media (min-resolution: 2dppx) {
+  .banner::before {
+    background: url("../img/catalog/gift_banner-small@2x.png");
+    background-size: 100% auto;
+  }
 }
 
 @media (min-width: @tablet-width) {
   .banner {
-    background: url("../img/catalog/gift_banner_medium.png");
     min-height: 200px;
     align-items: center;
     padding: 0;
     margin: 0;
     margin-top: 80px;
   }
+
+  .banner::before {
+    height: 200px;
+    background: url("../img/catalog/gift_banner-medium.png");
+  }
+
+  @media (min-resolution: 2dppx) {
+    .banner::before {
+      background: url("../img/catalog/gift_banner-medium@2x.png");
+      background-size: 100% auto;
+    }
+  }
 }
 
 @media (min-width: @desktop-width) {
   .banner {
     width: 245px;
-    background: url("../img/catalog/gift_banner_big.png");
     margin: 0;
     height: 289px;
+  }
+
+  .banner::before {
+    height: 289px;
+    background: url("../img/catalog/gift_banner-big.png");
+  }
+
+  @media (min-resolution: 2dppx) {
+    .banner::before {
+      background: url("../img/catalog/gift_banner-big@2x.png");
+      background-size: 100% auto;
+    }
   }
 }
 

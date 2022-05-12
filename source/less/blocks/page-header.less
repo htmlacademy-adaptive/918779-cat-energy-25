@@ -26,18 +26,28 @@
     min-height: 694px;
     box-sizing: border-box;
     padding-bottom: 62px;
+    background: linear-gradient(to left, rgba(104, 183, 56, 0.85) 50%, #ffffff 50%);
   }
 
   .page-header--index::before {
+    position: absolute;
     content: "";
     width: 50%;
     height: 694px;
-    background: url("../img/main-page/cat_big.png"), @green;
+    background: url("../img/main-page/cat-background-big.png");
     background-position: top right;
     background-repeat: no-repeat;
+    background-size: cover;
     top: 0;
     right: 0;
-    position: absolute;
+    z-index: -1;
+  }
+
+  @media (min-resolution: 2dppx) {
+    .page-header--index::before {
+      background: url("../img/main-page/cat-background-big@2x.png");
+      background-size: 100% auto;
+    }
   }
 }
 

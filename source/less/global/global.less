@@ -50,6 +50,16 @@
   z-index: -1;
 }
 
+.header-line--subtitle::before {
+  top: 30%;
+}
+
+@media (min-width: @tablet-width) {
+  .header-line--subtitle::before {
+    top: 50%;
+  }
+}
+
 @media (min-width: @desktop-width) {
   .header-line__wrapper {
     max-width: 1220px;
