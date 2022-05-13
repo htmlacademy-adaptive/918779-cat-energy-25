@@ -7,15 +7,27 @@
 }
 
 @media (max-width: @mobile-width-only) {
+  .program {
+    background: linear-gradient(to bottom, rgba(104, 183, 56, 0.85) 50%, #ffffff 50%);
+    background-repeat: no-repeat;
+  }
+
   .program::before {
     content: "";
     width: 100%;
     height: 302px;
-    background: url("../img/main-page/cat_small.png"), @green;
+    background: url("../img/main-page/cat-background-small.png");
     background-position: top center;
     background-repeat: no-repeat;
     position: absolute;
     z-index: -1;
+  }
+
+  @media (min-resolution: 2dppx) {
+    .program::before {
+      background: url("../img/main-page/cat-background-small@2x.png");
+      background-size: 100% auto;
+    }
   }
 }
 

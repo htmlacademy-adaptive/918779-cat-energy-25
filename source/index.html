@@ -3,6 +3,10 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
+    <link rel="icon" href="img/favicon/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicon/apple.png"> <!-- 180×180 -->
+    <link rel="manifest" href="manifest.webmanifest">
     <link href="css/style.css" rel="stylesheet">
     <title>HTML Academy: Кэт энерджи</title>
   </head>
@@ -12,6 +16,8 @@
       <div class="page-header__wrapper">
         <a class="page-header__logo">
           <picture>
+            <source srcset="img/logo-big.svg" media="(min-width: 1280px)">
+            <source srcset="img/logo-medium.svg" media="(min-width: 768px)">
             <img class="page-header__img" src="img/logo-small.svg" width="191" height="39" alt="Логотип КэтЭнерджи">
           </picture>
         </a>
@@ -41,7 +47,9 @@
           <p class="program__offer">Занялся собой? Займись котом!</p>
         </div>
         <picture>
-          <img class="program__img" src="img/main-page/index-can_big.png" width="709" height="609" alt="Большое фото упаковки питания для кошек">
+          <source srcset="img/main-page/can-big.png 1x, img/main-page/can-big@2x.png 2x" media="(min-width: 1280px)">
+          <source srcset="img/main-page/can-medium.png 1x, img/main-page/can-medium@2x.png 2x" media="(min-width: 768px)">
+          <img class="program__img" src="img/main-page/can-small.png" srcset="img/main-page/can-small@2x.png 2x" width="280" height="270" alt="Большое фото упаковки питания для кошек">
         </picture>
         <a class="program__button" href="form.html">Подобрать программу</a>
       </section>
@@ -119,12 +127,16 @@
             <div class = "example__range-items range-items">
               <div class="range-items__item range-items__item--before">
                 <picture>
-                  <img class="range-items__img" src="img/main-page/cat_before.png" width="251" height="240" alt="Толстый кот">
+                  <source srcset="img/main-page/cat-mixed-big.png 1x, img/main-page/cat-mixed-big@2x.png 2x" media="(min-width: 1280px)">
+                  <source srcset="img/main-page/cat-mixed-medium.png 1x, img/main-page/cat-mixed-medium@2x.png 2x" media="(min-width: 768px)">
+                  <img class="range-items__img" src="img/main-page/cat-before-small.png" srcset="img/main-page/cat-before-small@2x.png 2x" width="280" height="232" alt="Фото упитанного кот">
                 </picture>
               </div>
               <div class="range-items__item range-items__item--after">
                 <picture>
-                  <img class="range-items__img" src="img/main-page/cat_after.png" width="251" height="240" alt="Худой кот">
+                  <source srcset="img/main-page/cat-mixed-big.png 1x, img/main-page/cat-mixed-big@2x.png 2x" media="(min-width: 1280px)">
+                  <source srcset="img/main-page/cat-mixed-medium.png 1x, img/main-page/cat-mixed-medium@2x.png 2x" media="(min-width: 768px)">
+                  <img class="range-items__img" src="img/main-page/cat-after-small.png" srcset="img/main-page/cat-after-small@2x.png 2x" width="243" height="232" alt="Фото худого кота">
                 </picture>
               </div>
             </div>

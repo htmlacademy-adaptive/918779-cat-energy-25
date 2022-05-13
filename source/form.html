@@ -3,6 +3,10 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
+    <link rel="icon" href="img/favicon/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicon/apple.png"> <!-- 180×180 -->
+    <link rel="manifest" href="manifest.webmanifest">
     <link href="css/style.css" rel="stylesheet">
     <title>HTML Academy: Кэт энерджи</title>
   </head>
@@ -12,6 +16,8 @@
       <div class="page-header__wrapper">
         <a class="page-header__logo" href="index.html">
           <picture>
+            <source srcset="img/logo-big.svg" media="(min-width: 1280px)">
+            <source srcset="img/logo-medium.svg" media="(min-width: 768px)">
             <img class="page-header__img" src="img/logo-small.svg" width="191" height="39" alt="Логотип КэтЭнерджи">
           </picture>
         </a>
@@ -79,9 +85,11 @@
             </div>
 
             <div class="cat-owner">
-              <div class="cat-owner__header header-line">
+              <div class="cat-owner__header header-line header-line--subtitle">
                 <div class="header-line__wrapper">
-                  <h3 class="cat-owner__title">Контактные данные (владельца кота)</h3>
+                  <h3 class="cat-owner__title">Контактные данные
+                    <span class="cat-owner__title--subtitle">(владельца кота)</span>
+                  </h3>
                 </div>
               </div>
               <div class="cat-owner__inner">

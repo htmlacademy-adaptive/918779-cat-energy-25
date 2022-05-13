@@ -52,10 +52,24 @@
   height: 362px;
 }
 
+@media (min-resolution: 2dppx) {
+  .map__location {
+    background: url("../img/map_small@2x.png");
+    background-size: 100% auto;
+  }
+}
+
 @media (min-width: @tablet-width) {
   .map__location {
     height: 400px;
     background-image: url("../img/map_medium.png");
+  }
+
+  @media (min-resolution: 2dppx) {
+    .map__location {
+      background: url("../img/map_medium@2x.png");
+      background-size: 100% auto;
+    }
   }
 }
 
@@ -63,6 +77,13 @@
   .map__location {
     margin-top: 0;
     background-image: url("../img/map_big.png");
+  }
+
+  @media (min-resolution: 2dppx) {
+    .map__location {
+      background: url("../img/map_big@2x.png");
+      background-size: 100% auto;
+    }
   }
 }
 

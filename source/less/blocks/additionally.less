@@ -3,21 +3,12 @@
   border: none;
   margin-top: 28px;
   box-sizing: border-box;
+  padding: 0;
 }
 
 @media (min-width: @tablet-width) {
   .additionally {
     margin-top: 65px;
-    padding: 0;
-    padding-left: 40px;
-    padding-right: 40px;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .additionally {
-    padding-left: 0;
-    padding-right: 0;
   }
 }
 
@@ -41,7 +32,7 @@
     font-size: 36px;
     line-height: 36px;
     margin-left: 30px;
-    padding-left: 30px;
+    padding-left: 40px;
     padding-right: 37px;
   }
 }
@@ -55,10 +46,11 @@
 }
 
 .additionally__list {
-  padding: 0;
   margin: 0;
   padding-top: 34px;
   padding-bottom: 34px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 @media (min-width: @tablet-width) {
@@ -66,6 +58,8 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 60px;
+    padding-left: 70px;
+    padding-right: 70px;
   }
 }
 
@@ -74,5 +68,9 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-column-gap: 80px;
+    padding-left: 0;
+    padding-right: 0;
+    width: 1220px;
+    margin: 0 auto;
   }
 }
