@@ -51,21 +51,19 @@
   align-items: center;
   margin: 0;
   padding: 0;
+  cursor: pointer;
 }
 
-@media (min-width: @tablet-width) {
-  .social-list__link--vk {
-    width: 30px;
-    height: 22px;
+.social-list__icon {
+  fill: @footer-grey;
+
+  .social-list__link:hover & {
+    fill: @basic-green;
   }
 
-  .social-list__link--youtube {
-    width: 23px;
-    height: 23px;
-  }
-
-  .social-list__link--telegram {
-    width: 28px;
-    height: 33px;
+  .social-list__link:focus &,
+  .social-list__link:active & {
+    opacity: 0.3;
+    fill: @basic-green;
   }
 }

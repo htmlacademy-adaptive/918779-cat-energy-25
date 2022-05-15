@@ -64,6 +64,11 @@
   align-items: center;
 }
 
+.footer-info__developers:focus,
+.footer-info__developers:active {
+  opacity: 0.3;
+}
+
 @media (min-width: @tablet-width) {
   .footer-info__developers {
     width: auto;
@@ -75,6 +80,15 @@
   width: 27px;
   height: 34px;
   fill: @footer-grey;
+}
+
+.footer-info__developers:hover svg {
+  fill: @basic-green;
+}
+
+.footer-info__developers:active svg,
+.footer-info__developers:focus svg {
+  fill: @basic-green;
 }
 
 @media (min-width: @tablet-width) {

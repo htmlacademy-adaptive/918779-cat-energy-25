@@ -16,9 +16,9 @@
       <div class="page-header__wrapper">
         <a class="page-header__logo" href="index.html">
           <picture>
-            <source srcset="img/logo-big.svg" media="(min-width: 1280px)">
-            <source srcset="img/logo-medium.svg" media="(min-width: 768px)">
-            <img class="page-header__img" src="img/logo-small.svg" width="191" height="39" alt="Логотип КэтЭнерджи">
+            <source srcset="img/logo_big.svg" media="(min-width: 1280px)">
+            <source srcset="img/logo_medium.svg" media="(min-width: 768px)">
+            <img class="page-header__img" src="img/logo_small.svg" width="191" height="39" alt="Логотип КэтЭнерджи">
           </picture>
         </a>
         <nav class="main-nav main-nav--closed main-nav--nojs">
@@ -170,27 +170,43 @@
       <section class="footer-info">
         <div class="footer-info__wrapper">
           <h2 class="visually-hidden">Социальные сети</h2>
-          <a class="footer-info__logo">
+          <a class="footer-info__logo" href="index.html">
+            <span class="visually-hidden">Логотип Cat Energy</span>
+            <svg role="img" aria-label="Главная страница сайта Кэт Энерджи" width="128" height="24">
+              <use xlink:href="img/sprite.svg#logo_footer"></use>
+            </svg>
           </a>
           <ul class="footer-info__social-list social-list">
             <li class="social-list__item">
               <a class="social-list__link">
                 <span class="visually-hidden">Вконтакте</span>
+                <svg class="social-list__icon" role="img" aria-label="Социальная сеть Вконтакте" width="28" height="22">
+                  <use xlink:href="img/sprite.svg#icon_vk"></use>
+                </svg>
               </a>
             </li>
             <li class="social-list__item">
               <a class="social-list__link">
                 <span class="visually-hidden">Youtube</span>
+                <svg class="social-list__icon" role="img" aria-label="Видеохостинг Youtube" width="28" height="22">
+                  <use xlink:href="img/sprite.svg#icon_youtube"></use>
+                </svg>
               </a>
             </li>
             <li class="social-list__item">
               <a class="social-list__link ">
                 <span class="visually-hidden">Телеграм</span>
+                <svg class="social-list__icon" role="img" aria-label="Мессенджер Телеграм" width="28" height="22">
+                  <use xlink:href="img/sprite.svg#icon_telegram"></use>
+                </svg>
               </a>
             </li>
           </ul>
           <a class="footer-info__developers" href=" https://htmlacademy.ru/intensive/adaptive">
             <span>HTML Academy</span>
+            <svg role="img" aria-label="Сайт HtmlAcademy" width="27" height="34">
+              <use xlink:href="img/sprite.svg#icon_htmlacademy"></use>
+            </svg>
           </a>
         </div>
       </section>
