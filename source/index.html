@@ -7,7 +7,7 @@
     <link rel="icon" href="img/favicon/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicon/apple.png"> <!-- 180×180 -->
     <link rel="manifest" href="manifest.webmanifest">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
     <title>HTML Academy: Кэт энерджи</title>
   </head>
 
@@ -47,9 +47,9 @@
           <p class="program__offer">Занялся собой? Займись котом!</p>
         </div>
         <picture>
-          <source srcset="img/main-page/can_big.png 1x, img/main-page/can_big@2x.png 2x" media="(min-width: 1280px)">
-          <source srcset="img/main-page/can_medium.png 1x, img/main-page/can_medium@2x.png 2x" media="(min-width: 768px)">
-          <img class="program__img" src="img/main-page/can_small.png" srcset="img/main-page/can_small@2x.png 2x" width="280" height="270" alt="Большое фото упаковки питания для кошек">
+          <source srcset="img/main-page/can_big.webp 1x, img/main-page/can_big@2x.webp 2x" media="(min-width: 1280px)">
+          <source srcset="img/main-page/can_medium.webp 1x, img/main-page/can_medium@2x.webp 2x" media="(min-width: 768px)">
+          <img class="program__img" src="img/main-page/can_small.webp" srcset="img/main-page/can_small@2x.webp 2x" width="280" height="270" alt="Большое фото упаковки питания для кошек">
         </picture>
         <a class="program__button" href="form.html">Подобрать программу</a>
       </section>
@@ -120,23 +120,23 @@
                   <dd>затрачено времени</dd>
                 </div>
               </dl>
-              <p class="example__result">Затраты на питание: 15 000 руб.</p>
+              <p class="example__result">Затраты на питание: <span>15 000 руб.</span></p>
             </div>
           </div>
           <div class="example__range">
-            <div class = "example__range-items range-items">
+            <div class="example__range-items range-items">
               <div class="range-items__item range-items__item--before">
                 <picture>
-                  <source srcset="img/main-page/cat_mixed_big.png 1x, img/main-page/cat_mixed_big@2x.png 2x" media="(min-width: 1280px)">
-                  <source srcset="img/main-page/cat_mixed_medium.png 1x, img/main-page/cat_mixed_medium@2x.png 2x" media="(min-width: 768px)">
-                  <img class="range-items__img" src="img/main-page/cat_before_small.png" srcset="img/main-page/cat_before_small@2x.png 2x" width="280" height="232" alt="Фото упитанного кот">
+                  <source srcset="img/main-page/cat_mixed_big.webp 1x, img/main-page/cat_mixed_big@2x.webp 2x" media="(min-width: 1280px)">
+                  <source srcset="img/main-page/cat_mixed_medium.webp 1x, img/main-page/cat_mixed_medium@2x.webp 2x" media="(min-width: 768px)">
+                  <img class="range-items__img" src="img/main-page/cat_before_small.webp" srcset="img/main-page/cat_before_small@2x.webp 2x" width="280" height="232" alt="Фото упитанного кот">
                 </picture>
               </div>
               <div class="range-items__item range-items__item--after">
                 <picture>
-                  <source srcset="img/main-page/cat_mixed_big.png 1x, img/main-page/cat_mixed_big@2x.png 2x" media="(min-width: 1280px)">
-                  <source srcset="img/main-page/cat_mixed_medium.png 1x, img/main-page/cat_mixed_medium@2x.png 2x" media="(min-width: 768px)">
-                  <img class="range-items__img" src="img/main-page/cat_after_small.png" srcset="img/main-page/cat_after_small@2x.png 2x" width="243" height="232" alt="Фото худого кота">
+                  <source srcset="img/main-page/cat_mixed_big.webp 1x, img/main-page/cat_mixed_big@2x.webp 2x" media="(min-width: 1280px)">
+                  <source srcset="img/main-page/cat_mixed_medium.webp 1x, img/main-page/cat_mixed_medium@2x.webp 2x" media="(min-width: 768px)">
+                  <img class="range-items__img" src="img/main-page/cat_after_small.webp" srcset="img/main-page/cat_after_small@2x.webp 2x" width="243" height="232" alt="Фото худого кота">
                 </picture>
               </div>
             </div>
@@ -173,7 +173,7 @@
           <a class="footer-info__logo">
             <span class="visually-hidden">Логотип Cat Energy</span>
             <svg role="img" aria-label="Логотип Кэт Энерджи" width="128" height="24">
-              <use xlink:href="img/sprite.svg#logo_footer"></use>
+              <use xlink:href="img/sprite.svg#logo_text"></use>
             </svg>
           </a>
           <ul class="footer-info__social-list social-list">
@@ -213,7 +213,7 @@
 
     </footer>
 
-    <script src="js/script.js"></script>
+    <script src="js/script.min.js"></script>
 
   </body>
 </html>

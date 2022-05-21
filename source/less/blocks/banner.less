@@ -7,7 +7,7 @@
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  padding-bottom: 43px;
+  padding-bottom: 40px;
   box-sizing: border-box;
   position: relative;
 }
@@ -19,7 +19,7 @@
   content: "";
   width: 100%;
   height: 290px;
-  background: url("../img/catalog/gift_banner_small.png");
+  background: url("../img/catalog/gift_banner_small.webp");
   background-position: top center;
   background-repeat: no-repeat;
   z-index: -1;
@@ -27,7 +27,7 @@
 
 @media (min-resolution: 2dppx) {
   .banner::before {
-    background: url("../img/catalog/gift_banner_small@2x.png");
+    background: url("../img/catalog/gift_banner_small@2x.webp");
     background-size: 100% auto;
   }
 }
@@ -38,17 +38,17 @@
     align-items: center;
     padding: 0;
     margin: 0;
-    margin-top: 80px;
+    margin-top: 70px;
   }
 
   .banner::before {
     height: 200px;
-    background: url("../img/catalog/gift_banner_medium.png");
+    background: url("../img/catalog/gift_banner_medium.webp");
   }
 
   @media (min-resolution: 2dppx) {
     .banner::before {
-      background: url("../img/catalog/gift_banner_medium@2x.png");
+      background: url("../img/catalog/gift_banner_medium@2x.webp");
       background-size: 100% auto;
     }
   }
@@ -63,12 +63,12 @@
 
   .banner::before {
     height: 289px;
-    background: url("../img/catalog/gift_banner_big.png");
+    background: url("../img/catalog/gift_banner_big.webp");
   }
 
   @media (min-resolution: 2dppx) {
     .banner::before {
-      background: url("../img/catalog/gift_banner_big@2x.png");
+      background: url("../img/catalog/gift_banner_big@2x.webp");
       background-size: 100% auto;
     }
   }
@@ -92,15 +92,17 @@
   width: 78px;
   height: 80px;
   background: url("../img/catalog/icon_gift.svg");
-  bottom: 120px;
+  top: auto;
+  bottom: 110px;
   left: calc(50% - 39px);
+  right: auto;
 }
 
 @media (min-width: @tablet-width) {
   .banner__offer {
     text-align: left;
     width: 100%;
-    padding-left: 58%;
+    padding-left: 60%;
   }
 
   .banner__offer::before {
@@ -108,8 +110,9 @@
     content: "";
     width: 80px;
     height: 83px;
-    bottom: 0;
-    left: 12%;
+    top: auto;
+    bottom: -12px;
+    left: 11%;
     right: auto;
   }
 }
@@ -125,7 +128,7 @@
   .banner__offer::before {
     width: 80px;
     height: 83px;
-    bottom: 120px;
+    bottom: 104px;
     left: 35%;
   }
 }

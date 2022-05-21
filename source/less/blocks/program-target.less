@@ -3,13 +3,13 @@
   border: none;
   padding: 20px 0;
   margin: 0;
-  margin-top: 22px;
+  margin-top: 26px;
   box-sizing: border-box;
 }
 
 @media (min-width: @tablet-width) {
   .program-target {
-    margin-top: 40px;
+    margin-top: 53px;
     border: none;
     padding: 20px 0;
   }
@@ -22,7 +22,8 @@
 
 @media (min-width: @tablet-width) {
   .program-target__list {
-    padding: 25px 0;
+    padding-top: 25px;
+    padding-bottom: 30px;
     padding-left: 25px;
     border: 1px solid @special-grey;
     box-sizing: border-box;
@@ -44,4 +45,11 @@
   font-weight: 400;
   color: @special-black;
   text-transform: uppercase;
+}
+
+@media (min-width: @tablet-width) {
+  .program-target__label {
+    font-size: 20px;
+    line-height: 24px;
+  }
 }
