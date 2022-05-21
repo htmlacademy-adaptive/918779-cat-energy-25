@@ -2,42 +2,70 @@
   list-style: none;
   padding: 0;
   margin: 0;
-  padding-top: 9px;
   padding-left: 46px;
-  padding-bottom: 8px;
-  margin-bottom: 8px;
+  margin-bottom: 25px;
   box-sizing: border-box;
 }
 
-.additionally-list:last-child {
-  margin-bottom: 0;
+@media (min-width: @tablet-width) {
+  .additionally-list {
+    padding-left: 58px;
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: @mobile-width-only) {
+  .additionally-list {
+    .additionally-list:last-child label {
+      margin-top: -1px;
+    }
+  }
 }
 
 .additionally-list__input-checkbox + label::before {
   content: "";
   position: absolute;
-  left: -43px;
-  top: 0;
-  width: 26px;
-  height: 26px;
+  left: -46px;
+  top: -5px;
+  width: 30px;
+  height: 30px;
   border: 1px solid @example-grey;
   box-sizing: border-box;
+}
+
+@media (min-width: @tablet-width) {
+  .additionally-list__input-checkbox + label::before {
+    left: -58px;
+    top: -8px;
+    width: 40px;
+    height: 40px;
+  }
 }
 
 .additionally-list__input-checkbox:checked + label::after {
   content: "";
   position: absolute;
-  top: 6px;
+  top: 3px;
   left: -39px;
   width: 18px;
   height: 14px;
   background: url("../img/form/icon_check.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (min-width: @tablet-width) {
+  .additionally-list__input-checkbox:checked + label::after {
+    left: -50px;
+    top: 3px;
+    width: 24px;
+    height: 19px;
+  }
 }
 
 .additionally-list__label {
   position: relative;
   display: block;
-  padding-top: 4px;
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   line-height: 18px;
@@ -46,4 +74,11 @@
   text-transform: uppercase;
   cursor: pointer;
   user-select: none;
+}
+
+@media (min-width: @tablet-width) {
+  .additionally-list__label {
+    font-size: 20px;
+    line-height: 24px;
+  }
 }

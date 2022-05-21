@@ -50,6 +50,18 @@
   z-index: -1;
 }
 
+@media (min-width: @tablet-width) {
+  .header-line::before {
+    top: calc(50% + 2px);
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .header-line::before {
+    top: calc(50% + 4px);
+  }
+}
+
 .header-line--subtitle::before {
   top: 30%;
 }

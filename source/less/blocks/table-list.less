@@ -1,18 +1,21 @@
 .table-list {
   list-style: none;
   padding: 0;
-  margin: 0;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 14px;
-  margin-top: 12px;
 }
 
 @media (min-width: @tablet-width) {
   .table-list {
-    margin: 0;
-    width: 50%;
-    margin-top: 5px;
+    min-width: 224px;
+    justify-content: flex-end;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .table-list {
+    min-width: 288px;
+    justify-content: space-between;
   }
 }
 
@@ -28,28 +31,11 @@
   .table-list__item {
     font-size: 16px;
     line-height: 20px;
-    width: 50%;
+    min-width: 51px;
     text-align: right;
   }
 
   .table-list__item--volume {
-    width: 392px;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .table-list__item {
-    align-self: flex-end;
-    padding-bottom: 2px;
-    box-sizing: border-box;
-  }
-
-  .table-list__item--volume {
-    width: 250px;
-    text-align: left;
-  }
-
-  .table-list__item--price {
-    width: 100px;
+    margin-right: 44px;
   }
 }

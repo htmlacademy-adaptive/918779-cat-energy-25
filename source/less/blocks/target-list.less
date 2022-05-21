@@ -2,15 +2,22 @@
   list-style: none;
   padding: 0;
   margin: 0;
-  padding-left: 40px;
-  margin-bottom: 20px;
+  padding-left: 45px;
+  margin-bottom: 18px;
 }
 
 .target-list:last-child {
   margin-bottom: 0;
 }
 
-.target-list label {
+@media (min-width: @tablet-width) {
+  .target-list {
+    padding-left: 63px;
+    margin-bottom: 24px;
+  }
+}
+
+.target-list__label {
   position: relative;
   display: block;
   cursor: pointer;
@@ -19,10 +26,16 @@
   color: @special-black;
 }
 
+@media (min-width: @tablet-width) {
+  .target-list__label {
+    padding-top: 6px;
+  }
+}
+
 .target-list__input-radio + label::before {
   content: "";
   position: absolute;
-  left: -43px;
+  left: -44px;
   top: 0;
   width: 30px;
   height: 30px;
@@ -31,13 +44,31 @@
   border-radius: 50%;
 }
 
+@media (min-width: @tablet-width) {
+  .target-list__input-radio + label::before {
+    width: 40px;
+    height: 40px;
+    left: -60px;
+    top: -2px;
+  }
+}
+
 .target-list__input-radio:checked + label::after {
   content: "";
   position: absolute;
   top: 8px;
-  left: -35px;
+  left: -36px;
   width: 14px;
   height: 14px;
   background: @green;
   border-radius: 50%;
+}
+
+@media (min-width: @tablet-width) {
+  .target-list__input-radio:checked + label::after {
+    width: 18px;
+    height: 18px;
+    top: 9px;
+    left: -49px;
+  }
 }
