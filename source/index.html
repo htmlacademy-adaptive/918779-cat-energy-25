@@ -11,7 +11,7 @@
     <title>HTML Academy: Кэт энерджи</title>
   </head>
 
-  <body class="page__body">
+  <body class="page-body">
     <header class="page-header page-header--index">
       <div class="page-header__wrapper">
         <a class="page-header__logo">
@@ -40,23 +40,19 @@
           </div>
         </nav>
       </div>
+    </header>
+
+    <main class="page-main">
+      <h1 class="visually-hidden">Интернет-магазин фитнес еды для котиков</h1>
       <section class="program">
         <div class="program__wrapper">
           <h2 class="visually-hidden">Подбор программы питания для котов</h2>
           <p class="program__description">Функциональное питание для котов</p>
           <p class="program__offer">Занялся собой? Займись котом!</p>
         </div>
-        <picture>
-          <source srcset="img/main-page/can_big.webp 1x, img/main-page/can_big@2x.webp 2x" media="(min-width: 1280px)">
-          <source srcset="img/main-page/can_medium.webp 1x, img/main-page/can_medium@2x.webp 2x" media="(min-width: 768px)">
-          <img class="program__img" src="img/main-page/can_small.webp" srcset="img/main-page/can_small@2x.webp 2x" width="280" height="270" alt="Большое фото упаковки питания для кошек">
-        </picture>
         <a class="program__button" href="form.html">Подобрать программу</a>
       </section>
-    </header>
 
-    <main class="page-main">
-      <h1 class="visually-hidden">Интернет-магазин фитнес еды для котиков</h1>
       <section class="direction">
         <h2 class="visually-hidden">Направления питания</h2>
         <ul class="direction__list type-list">
@@ -142,7 +138,9 @@
             </div>
             <div class="example__controls">
               <p class="example__toggle example__toggle--before">Было</p>
-              <input class="example__scale" type="range" min="0" max="100" step="50">
+              <label class="example__label">
+                <input class="example__scale" type="range" min="0" max="100" step="50">
+              </label>
               <p class="example__toggle example__toggle--after">Стало</p>
             </div>
           </div>

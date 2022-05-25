@@ -11,7 +11,7 @@
     <title>HTML Academy: Кэт энерджи</title>
   </head>
 
-  <body class="page__body">
+  <body class="page-body">
     <header class="page-header">
       <div class="page-header__wrapper">
         <a class="page-header__logo" href="index.html">
@@ -53,15 +53,15 @@
                 <h3 class="visually-hidden">Информация о коте</h3>
                 <div class="cat-info__wrapper">
                   <label class="cat-info__label" for="cat-name">Имя:*</label>
-                  <input class="cat-info__name" type="text" name="cat-name" id="cat-name" placeholder="Барсик" required>
+                  <input class="cat-info__input cat-info__name" type="text" name="cat-name" id="cat-name" placeholder="Барсик" required>
                 </div>
                 <div class="cat-info__wrapper">
                   <label class="cat-info__label" for="cat-weight">Вес (кг):*</label>
-                  <input class="cat-info__weight" type="number" name="cat-weight" id="cat-weight" placeholder="7" required>
+                  <input class="cat-info__input cat-info__weight" type="number" name="cat-weight" id="cat-weight" placeholder="7" required>
                 </div>
                 <div class="cat-info__wrapper">
                   <label class="cat-info__label" for="cat-age">Возраст (лет):</label>
-                  <input class="cat-info__age" type="number" name="cat-age" id="cat-age" placeholder="7">
+                  <input class="cat-info__input cat-info__age" type="number" name="cat-age" id="cat-age" placeholder="7">
                 </div>
               </div>
 
@@ -88,7 +88,7 @@
               <div class="cat-owner__header header-line header-line--subtitle">
                 <div class="header-line__wrapper">
                   <h3 class="cat-owner__title">Контактные данные
-                    <span class="cat-owner__title--subtitle">(владельца кота)</span>
+                    <span class="cat-owner__subtitle">(владельца кота)</span>
                   </h3>
                 </div>
               </div>
@@ -96,10 +96,16 @@
                 <div class="cat-owner__wrapper">
                   <label class="cat-owner__label" for="cat-owner-email">E-mail:*</label>
                   <input class="cat-owner__input cat-owner__email" type="email" name="cat-owner-email" id="cat-owner-email" placeholder="kuklachev@gmail.com" required>
+                  <svg class="cat-owner__input-icon cat-owner__email-icon" role="img" aria-label="Иконка электронного письма" width="19" height="14">
+                    <use xlink:href="img/sprite.svg#icon_email"></use>
+                  </svg>
                 </div>
                 <div class="cat-owner__wrapper">
                   <label class="cat-owner__label" for="cat-owner-phone">Телефон:*</label>
                   <input class="cat-owner__input cat-owner__phone" type="tel" name="cat-owner-phone" id="cat-owner-phone" placeholder="8 (960) 900-60-90" required>
+                  <svg class="cat-owner__input-icon cat-owner__phone-icon" role="img" aria-label="Иконка телефона" width="20" height="20">
+                    <use xlink:href="img/sprite.svg#icon_phone"></use>
+                  </svg>
                 </div>
               </div>
             </div>
