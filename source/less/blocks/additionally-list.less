@@ -15,10 +15,8 @@
 }
 
 @media (max-width: @mobile-width-only) {
-  .additionally-list {
-    .additionally-list:last-child label {
-      margin-top: -1px;
-    }
+  .additionally-list:last-child label {
+    margin-top: -1px;
   }
 }
 
@@ -49,7 +47,7 @@
   left: -39px;
   width: 18px;
   height: 14px;
-  background: url("../img/form/icon_check.svg");
+  background: url("../img/icon_check.svg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -61,6 +59,19 @@
     width: 24px;
     height: 19px;
   }
+}
+
+.additionally-list__input-checkbox:disabled + label::before,
+.additionally-list__input-checkbox:hover + label::before,
+.additionally-list__input-checkbox:focus + label::before {
+  border: 1px solid @checkbox-grey;
+}
+
+.additionally-list__input-checkbox:disabled + label,
+.additionally-list__input-checkbox:disabled + label::before,
+.additionally-list__input-checkbox:disabled + label::after {
+  opacity: 0.3;
+  pointer-events: none;
 }
 
 .additionally-list__label {

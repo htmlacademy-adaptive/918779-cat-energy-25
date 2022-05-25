@@ -35,8 +35,8 @@
 .target-list__input-radio + label::before {
   content: "";
   position: absolute;
-  left: -44px;
-  top: 0;
+  left: -45px;
+  top: 1px;
   width: 30px;
   height: 30px;
   border: 1px solid @example-grey;
@@ -56,8 +56,8 @@
 .target-list__input-radio:checked + label::after {
   content: "";
   position: absolute;
-  top: 8px;
-  left: -36px;
+  top: 9px;
+  left: -37px;
   width: 14px;
   height: 14px;
   background: @green;
@@ -71,4 +71,17 @@
     top: 9px;
     left: -49px;
   }
+}
+
+.target-list__input-radio:disabled + label::before,
+.target-list__input-radio:hover + label::before,
+.target-list__input-radio:focus + label::before {
+  border: 1px solid @checkbox-grey;
+}
+
+.target-list__input-radio:disabled + label,
+.target-list__input-radio:disabled + label::before,
+.target-list__input-radio:disabled + label::after {
+  opacity: 0.3;
+  pointer-events: none;
 }

@@ -1,0 +1,42 @@
+.header-line {
+  position: relative;
+}
+
+.header-line::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  height: 2px;
+  width: 100%;
+  background: @green;
+  z-index: -1;
+}
+
+@media (min-width: @tablet-width) {
+  .header-line::before {
+    top: calc(50% + 2px);
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .header-line::before {
+    top: calc(50% + 4px);
+  }
+}
+
+.header-line--subtitle::before {
+  top: 30%;
+}
+
+@media (min-width: @tablet-width) {
+  .header-line--subtitle::before {
+    top: 50%;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .header-line__wrapper {
+    max-width: 1220px;
+    margin: 0 auto;
+  }
+}

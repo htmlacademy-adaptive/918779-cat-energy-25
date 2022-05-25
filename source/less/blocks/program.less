@@ -3,28 +3,56 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  flex-wrap: wrap;
   position: relative;
+  min-height: 480px;
+}
+
+.program::before {
+  position: absolute;
+  content: "";
+  width: 280px;
+  height: 270px;
+  background: url("../img/main-page/can_small.webp");
+  background-repeat: no-repeat;
+  left: auto;
+  right: auto;
+  top: auto;
+  bottom: 43px;
+}
+
+@media (min-resolution: 2dppx) {
+  .program::before {
+    background: url("../img/main-page/can_small@2x.webp");
+    background-size: 100% auto;
+  }
 }
 
 @media (max-width: @mobile-width-only) {
   .program {
-    background: linear-gradient(to bottom, rgba(104, 183, 56, 0.85) 62.5%, #ffffff 37.5%);
+    background: linear-gradient(to bottom, rgba(104, 183, 56, 0.85) 63%, #ffffff 37%);
     background-repeat: no-repeat;
+    justify-content: space-between;
   }
 
-  .program::before {
+  .program::after {
+    position: absolute;
     content: "";
     width: 100%;
-    height: 302px;
+    min-height: 302px;
     background: url("../img/main-page/cat_background_small.webp");
     background-position: top center;
     background-repeat: no-repeat;
-    position: absolute;
+    background-size: cover;
+    top: 0;
+    bottom: auto;
+    right: 0;
+    left: auto;
     z-index: -1;
   }
 
   @media (min-resolution: 2dppx) {
-    .program::before {
+    .program::after {
       background: url("../img/main-page/cat_background_small@2x.webp");
       background-size: 100% auto;
     }
@@ -34,9 +62,30 @@
 @media (min-width: @tablet-width) {
   .program {
     align-items: flex-start;
-    position: relative;
     padding: 0 30px;
     margin-top: 47px;
+    position: relative;
+    min-height: 808px;
+  }
+
+  .program::before {
+    position: absolute;
+    content: "";
+    width: 709px;
+    height: 609px;
+    background: url("../img/main-page/can_medium.webp");
+    left: 30px;
+    right: auto;
+    top: auto;
+    bottom: -12px;
+    z-index: -1;
+  }
+
+  @media (min-resolution: 2dppx) {
+    .program::before {
+      background: url("../img/main-page/can_medium@2x.webp");
+      background-size: 100% auto;
+    }
   }
 }
 
@@ -44,22 +93,39 @@
   .program {
     width: 1060px;
     margin: 0 auto;
-    z-index: 2;
-    margin-top: 10px;
-    flex-direction: row;
-    display: flex;
+    position: relative;
+    min-height: 587px;
+  }
+
+  .program::before {
+    position: absolute;
+    content: "";
+    width: 552px;
+    height: 499px;
+    background: url("../img/main-page/can_big.webp");
+    left: calc(35% + 6px);
+    right: auto;
+    top: 35px;
+    bottom: auto;
+  }
+
+  @media (min-resolution: 2dppx) {
+    .program::before {
+      background: url("../img/main-page/can_big@2x.webp");
+      background-size: 100% auto;
+    }
   }
 }
 
 .program__wrapper {
   margin-top: 26px;
+  position: relative;
 }
 
 @media (min-width: @tablet-width) {
   .program__wrapper {
     padding-left: 88px;
     margin-top: 10px;
-    position: relative;
   }
 }
 
@@ -67,7 +133,8 @@
   .program__wrapper {
     padding-left: 0;
     margin: 0;
-    margin-top: 106px;
+    margin-top: 115px;
+    width: 50%;
   }
 }
 
@@ -104,7 +171,7 @@
   text-align: center;
   padding: 0;
   margin: 0;
-  margin-top: 25px;
+  margin-top: 23px;
 }
 
 @media (min-width: @tablet-width) {
@@ -114,33 +181,6 @@
     color: @black;
     text-align: left;
     margin: 0;
-  }
-}
-
-.program__img {
-  margin: 0 auto;
-  margin-top: 27px;
-  width: 280px;
-  height: 270px;
-}
-
-@media (min-width: @tablet-width) {
-  .program__img {
-    margin-top: 20px;
-    width: 709px;
-    height: 609px;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .program__img {
-    width: 552px;
-    height: 499px;
-    display: flex;
-    position: absolute;
-    top: 5px;
-    left: calc(50% - 160px);
-    right: auto;
   }
 }
 
@@ -174,11 +214,11 @@
   .program__button {
     font-size: 20px;
     line-height: 20px;
-    position: absolute;
-    top: 241px;
-    left: 120px;
+    margin-left: 88px;
+    margin-top: 50px;
     width: auto;
-    padding: 0 27px;
+    padding-left: 27px;
+    padding-right: 27px;
     min-height: 54px;
   }
 }
@@ -187,8 +227,7 @@
   .program__button {
     font-size: 20px;
     line-height: 20px;
-    position: absolute;
-    top: 337px;
-    left: 30px;
+    margin-top: 52px;
+    margin-left: 0;
   }
 }

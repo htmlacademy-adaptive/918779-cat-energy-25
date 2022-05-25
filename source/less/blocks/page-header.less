@@ -18,33 +18,42 @@
 }
 
 .page-header--index {
-  min-height: 545px;
+  position: relative;
 }
 
 @media (min-width: @desktop-width) {
-  .page-header--index {
-    min-height: 694px;
-    box-sizing: border-box;
-    padding-bottom: 62px;
-    background: linear-gradient(to left, rgba(104, 183, 56, 0.85) 50%, #ffffff 50%);
-  }
-
   .page-header--index::before {
     position: absolute;
     content: "";
+    width: 100%;
+    min-height: 694px;
+    background: linear-gradient(to left, rgba(104, 183, 56, 0.85) 50%, #ffffff 50%);
+    top: 0;
+    bottom: auto;
+    right: 0;
+    left: auto;
+    box-sizing: border-box;
+    z-index: -1;
+  }
+
+  .page-header--index::after {
+    position: absolute;
+    content: "";
     width: 50%;
-    height: 694px;
+    min-height: 694px;
     background: url("../img/main-page/cat_background_big.webp");
     background-position: top right;
     background-repeat: no-repeat;
     background-size: cover;
     top: 0;
+    bottom: auto;
     right: 0;
-    z-index: -1;
+    left: auto;
+    z-index: -2;
   }
 
   @media (min-resolution: 2dppx) {
-    .page-header--index::before {
+    .page-header--index::after {
       background: url("../img/main-page/cat_background_big@2x.webp");
       background-size: 100% auto;
     }
